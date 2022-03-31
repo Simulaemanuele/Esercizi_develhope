@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+    <meta name="author" content="Emanuele Simula" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Esercizio-6-HTML</title>
+</head>
+
+<body>
+
+    <!--Aggiungi alla pagina:
+
+Un pulsante disabilitato
+Un input numerico, con relativa label, nel range 0-100 e con step di 2
+Una checkbox con relativa label
+Un input per date con una proprietà custom-->
+
+
+    <button disabled>Non puoi cliccarmi</button>
+
+    <hr>
+
+    <label for="number">
+        <input type="number" id="number" name="number" min="0" max="100" step="2" />
+        <button type="submit">select</button>
+    </label>
+
+    <hr>
+    <form action="#" method="get">
+
+        <input type="checkbox" id="checkbox_1" name="checkbox_1" value="scelta_1" />
+        <label for="checkbox_1">Scelta 1</label>
+
+        <br>
+
+        <input type="checkbox" id="checkbox_2" name="checkbox_2" value="scelta_2" checked />
+        <label for="checkbox_2">Scelta 2</label>
+
+        <br>
+
+        <input type="checkbox" id="checkbox_3" name="checkbox_3" value="scelta_3" />
+        <label for="checkbox_3">Scelta 3</label>
+
+        <br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <br><br>
+
+    <div>
+        <label for="date">Seleziona una data: </label>
+
+        <input type="date" id="date" min="2020-01-01" max="2050-12-31" autofocus>
+    </div>
+
+    <hr>
+
+    
+</body>
+
+</html>
