@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+    <meta name="author" content="Emanuele Simula" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Esercizio-7-HTML</title>
+
+</head>
+
+<body>
+    <h1>Compila le sezioni </h1>
+
+    <form action="demo.php" method="get">
+
+        <h2>Iscriviti</h2>
+
+        <br>
+
+        <section>
+            <div>
+                <label for="email">Inserisci Email: </label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="identity_name">Inserire nome: </label>
+                <input type="text" id="identity_name" name="identity" required><br>
+
+                <br>
+
+                <label for="identity_surname">Inserire cognome: </label>
+                <input type="text" id="identity_surname" name="identity" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="password">Inserisci Password: </label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="date"> Inserisci data di nascita: </label>
+                <input type="date" id="date" name="date">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="phone_numb">Inserire numero di telefono: </label>
+                <input type="number" id="number" name="number" required>
+            </div>
+        </section>
+
+        <h2>Abbonati</h2>
+
+        <fieldset>
+            <h3>
+                Scegli un piano
+            </h3>
+
+            <label for="piano"></label>
+
+            <select name="piano" id="piano">
+
+                <optgroup label="Scegli un piano">
+
+                    <option value="Free">Free 0.00 €</option>
+
+                    <option value="Base" selected>Base 10.00 €</option>
+
+                    <option value="Medium">Medio 20.00 €</option>
+
+                    <option value="Premium">Premium 30.00 €</option>
+
+                </optgroup>
+
+            </select>
+
+            <input type="checkbox" id="pro_adv" name="pro" value="vantaggi pro" step="[Medium] + [Premium]">
+            <label for="pro_adv">Clicca se vuoi aggiungere i vantaggi PRO +5.00 €</label>
+        </fieldset>
+
+        <fieldset>
+
+            <label for="id_carta">Inserisci nome e cognome carta di credito</label>
+            <input type="text" id="id_carta" name="id_carta" value="Nome e cognome">
+
+            <br>
+            <br>
+
+            <label for="num_carta">Inserisci numero carta di credito</label>
+            <input type="text" id="num_carta" name="num_carta" value="" autocomplete="off" maxlength="16" required>
+
+            <br>
+            <br>
+
+            <label for="scad_carta">Data di scadenza carta</label>
+            <input type="text" id="scad_carta" name="scad_carta" value="mm/aaaa" required>
+
+            <br>
+            <br>
+
+            <label for="CVC">CVC</label>
+            <input type="text" id="CVC" name="CVC" value="" maxlength="3" required>
+
+            <br>
+            <br>
+
+            <label for="indirizzo">Indirizzo di fatturazione</label>
+            <input type="text" id="indirizzo" name="indirizzo" value="" autocomplete="off" required>
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit" id="submit" name="submit" value="Ok">
+    </form>
+
+
+</body>
+
+</html>
