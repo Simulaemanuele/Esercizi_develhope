@@ -1,0 +1,31 @@
+:root {
+    --bg-color-def: #FFFFFF;
+    --bg-color-var1: #808080;
+    --bg-color-var2: #011212;
+    --color-ball-def: #ff8800;
+    --color-ball-var: #008000;
+    --color-ball-var2: #011212;
+    --txt-color: #011212;
+    --txt-color-var: #FFFFFF;
+}
+
+
+body {
+    background-color: var(--bg-color-def);
+   
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    
+    background-color: var(--color-ball-var2);
+    color: var(--txt-color-var);
+    border-radius: 50px;
+}
+
+div > p {
+  
+    background-color: var(--bg-color-var1);
+    text-align: center;
+}
