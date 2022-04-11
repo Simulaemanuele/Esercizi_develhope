@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+1- Uno spazio, placeholder, per il logo in alto;
+2- 4 link per la navigazione subito dopo il logo;
+3- Avatar e nome utente in colonna, centrati in fondo; 
+La sidebar deve avere dimensioni pari a 200px in larghezza e il 100% in altezza della pagina.
+Aggiungere un immagine della sidebar già risolta nella cartella, come risultato finale.
+I link devono avere colore #2b2b2b e cambiare in #2b2bb2 al passaggio del mouse,
+con una transizione di 0.3 secondi; Usa flexbox per gestire il layout.
+-->
+
+<head>
+    <meta name="author" content="Emanuele Simula" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Esercizio flexbox 2nd esercizio">
+    <title>Esercizio-2-CSS</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-between;
+            background-color: azure;
+
+        }
+
+        /*Immagine dell'avatar*/
+        section > img {
+            border: solid;
+            width: 60%;
+            border-radius: 50%;
+            
+        }
+
+        /*Immagine del logo*/
+        div > img {
+            border: solid;
+            width: 15%;
+            border-radius: 50%;
+
+        }
+
+        .search-bar {
+            display: flex;
+            margin-top: 5%;
+            flex-direction: row;
+            justify-content: space-evenly;
+            order: 0;
+
+        }
+
+        .content {
+            order: 2;
+            width: 70%;
+        }
+
+        .sidebar {
+            background-color: rgba(211, 211, 211, 0.46);
+            border-style: solid;
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            height: 100vh;
+            order: 1;
+
+        }
+
+        .avatar {
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+
+            justify-content: space-between;
+            order: 2;
+        }
+
+        a {
+            color: #2b2b2b;
+        }
+
+        a:hover {
+            color: #2b2bb2;
+            transition: 0.3s;
+        }
+
+        section > hr {
+            color: #2b2b2b;
+            width: 180px;
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+        }
+
+        input {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <main class="content">
+        <h1>Test Flexbox</h1>
+
+        <hr>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a justo consequat, imperdiet mauris nec,
+            aliquam felis. Mauris eget felis neque. Morbi a nisi vehicula, mollis magna ut, suscipit mi. Aenean quis
+            vulputate ex. Duis vel lectus laoreet, molestie magna quis, aliquam nunc. In tincidunt dictum turpis eu
+            efficitur. Duis ut facilisis nibh. Proin eu metus in purus ullamcorper suscipit vel consectetur turpis.
+            Donec consectetur pellentesque tempor. Sed finibus velit id risus pellentesque, sed tempor eros
+            sollicitudin. Donec non dolor pretium, pretium dui non, porttitor tortor.
+        </p>
+
+        <p>
+            Nullam tempor ex sit amet eros tristique semper. Cras ornare dui nec suscipit pellentesque. Sed lacinia
+            malesuada mauris, eget euismod odio euismod non. Vivamus nec ullamcorper sapien, non egestas libero.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur sollicitudin vehicula tempor.
+            Fusce egestas rutrum blandit. Fusce id viverra neque.
+        </p>
+
+        <p>
+            Vestibulum ut quam et velit rutrum viverra. Class aptent taciti sociosqu ad litora torquent per conubia
+            nostra, per inceptos himenaeos. Donec ut sem dignissim arcu ultrices auctor. Vestibulum hendrerit nibh
+            odio, sit amet venenatis quam malesuada ac. Suspendisse potenti. Nunc tellus elit, scelerisque ultrices
+            purus sed, imperdiet lobortis odio. Vivamus in orci sollicitudin arcu finibus ullamcorper tempor id
+            ipsum. Nullam mauris ex, pharetra vitae vulputate quis, ultricies nec nulla. Ut ut vulputate massa.
+            Etiam vel gravida ante, non ornare tellus.
+        </p>
+    </main>
+
+    <aside class="sidebar">
+
+        <section class="avatar">
+
+            <img src="avatar_img.jpg" alt="Avatar image" />
+
+            <hr/>
+
+            <p>Nome utente</p>
+
+        </section>
+
+        <div class="search-bar">
+
+            <img src="logo.png" alt="A logo" title="An example logo">
+
+            <form action="#" method="get">
+
+                <label for="search-bar">
+
+                    <input type="search" placeholder="Search..." name="search" id="search-bar" />
+
+                    <button type="submit">Search</button>
+
+                </label>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">News</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+            </ul>
+        </nav>
+        
+    </aside>
+
+</body>
+
+</html>
